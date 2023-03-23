@@ -310,6 +310,7 @@ cartcont.addEventListener("click", (e) => {
     y();
   } else if (e.target.className == "ca") {
     let newArr = JSON.parse(localStorage.getItem("product")) || [];
+    counts.innerHTML -=1; 
     let arr2 = [];
     for (let k of newArr) {
       if (newArr[0].id == k.id) {
